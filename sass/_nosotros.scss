@@ -1,0 +1,15 @@
+
+.infor {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        text-align: center;
+        margin: 20px 70px 20px 70px;
+        font-size: 20px;
+        background-color: $main-color;
+        border-radius: 20px;
+        padding: 20px;
+        color: bisque;
+    }
+}

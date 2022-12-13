@@ -1,0 +1,174 @@
+
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "titulo"
+        "imgs"
+        "footer";
+    grid-template-columns: 100%;
+    gap: 10px
+}
+
+.imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: bisque;
+}
+
+@mixin margin ($margin, $padding){
+
+margin: $margin;
+padding: $padding;
+
+}
+
+.imagen1 {
+    @include margin(10px, 10px);
+    display: flex;
+    flex-direction: column;
+    background-color: $main-color;
+    width: 60%;
+    border-radius: 20px;
+}
+
+.texto1{
+    font-size: 20px;
+}
+
+.texto2{
+    @extend .texto1;
+}
+
+.imagen2 {
+    @include margin(10px, 10px);
+    display: flex;
+    flex-direction: column;
+    background-color: $main-color;
+    width: 60%;
+    border-radius: 20px;
+}
+
+.imagen3 {
+    @include margin(10px, 10px);
+    display: flex;
+    flex-direction: column;
+    background-color: $main-color;
+    width: 70%;
+    border-radius: 20px;
+} 
+
+
+@media(min-width:500px){
+    .imagen1 {
+        width: 80%;
+    }        
+
+    .imagen2 {
+        width: 80%;
+        border-radius: 20px;
+    }
+
+
+    .imagen3 {
+        width: 80%;
+        border-radius: 20px;
+    }
+}
+@media(min-width: 768px){
+    .imagen1 {
+        width: 65%;
+    }
+
+    .imagen2 {
+        width: 65%;
+    }
+
+    .imagen3 {
+        width: 65%;
+    }
+}
+@media(min-width: 1024px){
+
+    .subtitulo {
+        margin: 0px 60px 0px 60px;
+    }
+
+    .imgs {
+        align-items: flex-start;
+    }
+
+    .imagen1 {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 20px;
+        height: 100%;
+        width: 62%;
+        margin-left: 35%;
+        margin-bottom: 50px;
+        background-color: $main-color;
+        border-radius: 20px;
+
+        img {
+            border-radius: 20px;
+            margin-left: 10px;
+            width: 270px;
+        }
+    }
+
+    .texto1 {
+        text-align: end;
+        font-size: 20px;
+        color: bisque
+    }
+
+    .imagen2 {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 55%;
+        padding: 20px;
+        margin: 10px;
+        background-color: $main-color;
+        border-radius: 20px;
+
+        img {
+            height: 150px;
+            width: auto;
+            border-radius: 20px;
+            margin-right: 10px;
+        }
+    }
+
+    .texto2 {
+        text-align: start;
+        font-size: 20px;
+        color: bisque;
+    }
+
+    .imagen3 {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 20px;
+        height: 100%;
+        width: 70%;
+        margin-left: 25%;
+        margin-bottom: 50px;
+        background-color: $main-color;
+        border-radius: 20px;
+        margin-top: 55px;
+
+        img {
+            border-radius: 20px;
+            margin-left: 10px;
+            width: 400px;
+        }
+    }
+
+}

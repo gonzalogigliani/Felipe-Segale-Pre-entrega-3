@@ -1,0 +1,47 @@
+
+.venta {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        height: auto;
+        width: auto;
+        border-radius: 20px;
+        margin: 40px;
+        transition: 1s;
+        
+            &:hover {
+                transform: scale(1.2);
+            }
+    }
+}
+
+
+@media(min-width:500px) {
+
+    .venta {
+        align-items: center;
+    }
+
+    .venta img {
+        height: auto;
+        width: 300px;
+        border-radius: 20px;
+        margin: 40px;
+    }
+}
+
+@media(min-width: 768px) {
+
+    .venta {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(min-width:1024px) {
+
+
+}

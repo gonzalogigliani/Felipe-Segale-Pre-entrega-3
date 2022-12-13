@@ -1,0 +1,51 @@
+.contenedorServicios{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "titulo"
+    "cursos"
+    "footer";
+}
+
+.cursosContenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.cursos{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 5px;
+}
+
+@media(min-width: 500px){
+    .cursos{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+@media(min-width: 768px){
+    .cursos{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 5px;
+    }
+}
+
+@media(min-width: 1024px){
+    .cursos{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 50px;
+    }
+}

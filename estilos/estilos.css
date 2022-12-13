@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Sans&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+html {
+  font-size: 80%;
+}
+
+.bkc {
+  background-color: rgb(13, 45, 59);
+}
+
+body {
+  background-color: rgb(11, 83, 88);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/*grids index*/
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.imgs {
+  grid-area: imgs;
+}
+
+/*contacto*/
+.contactos {
+  grid-area: contactos;
+}
+
+.mail {
+  grid-area: mail;
+}
+
+.titulo {
+  grid-area: titulo;
+}
+
+.cursos {
+  grid-area: cursos;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-areas: "header" "titulo" "imgs" "footer";
+  grid-template-columns: 100%;
+  gap: 10px;
+}
+
+.imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: bisque;
+}
+
+.imagen1 {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(13, 45, 59);
+  width: 60%;
+  border-radius: 20px;
+}
+
+.texto1, .texto2 {
+  font-size: 20px;
+}
+
+.imagen2 {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(13, 45, 59);
+  width: 60%;
+  border-radius: 20px;
+}
+
+.imagen3 {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(13, 45, 59);
+  width: 70%;
+  border-radius: 20px;
+}
+
+@media (min-width: 500px) {
+  .imagen1 {
+    width: 80%;
+  }
+  .imagen2 {
+    width: 80%;
+    border-radius: 20px;
+  }
+  .imagen3 {
+    width: 80%;
+    border-radius: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .imagen1 {
+    width: 65%;
+  }
+  .imagen2 {
+    width: 65%;
+  }
+  .imagen3 {
+    width: 65%;
+  }
+}
+@media (min-width: 1024px) {
+  .subtitulo {
+    margin: 0px 60px 0px 60px;
+  }
+  .imgs {
+    align-items: flex-start;
+  }
+  .imagen1 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    height: 100%;
+    width: 62%;
+    margin-left: 35%;
+    margin-bottom: 50px;
+    background-color: rgb(13, 45, 59);
+    border-radius: 20px;
+  }
+  .imagen1 img {
+    border-radius: 20px;
+    margin-left: 10px;
+    width: 270px;
+  }
+  .texto1, .texto2 {
+    text-align: end;
+    font-size: 20px;
+    color: bisque;
+  }
+  .imagen2 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 55%;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(13, 45, 59);
+    border-radius: 20px;
+  }
+  .imagen2 img {
+    height: 150px;
+    width: auto;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  .texto2 {
+    text-align: start;
+    font-size: 20px;
+    color: bisque;
+  }
+  .imagen3 {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+    height: 100%;
+    width: 70%;
+    margin-left: 25%;
+    margin-bottom: 50px;
+    background-color: rgb(13, 45, 59);
+    border-radius: 20px;
+    margin-top: 55px;
+  }
+  .imagen3 img {
+    border-radius: 20px;
+    margin-left: 10px;
+    width: 400px;
+  }
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 20px;
+  bottom: 20px;
+}
+footer img {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(13, 45, 59);
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+    background-color: rgb(13, 45, 59);
+    margin-left: 75%;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 20px;
+  }
+  footer img {
+    height: 45px;
+    width: 45px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(13, 45, 59);
+  }
+}
+@media (min-width: 1024px) {
+  footer img {
+    height: 60px;
+    width: 60px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(13, 45, 59);
+  }
+  footer {
+    margin-left: 79%;
+  }
+}
+.contactosContenedor {
+  display: grid;
+  grid-template-areas: "header" "titulo" "contactos" "mail";
+  grid-template-columns: 100%;
+  gap: 10px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contactMail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactos {
+  width: 50%;
+}
+.contactos img {
+  background-color: rgb(13, 45, 59);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  height: 170px;
+}
+
+.mail {
+  width: 70%;
+}
+.mail div p {
+  color: bisque;
+  font-size: 20px;
+  padding: 15px;
+  margin: 40px;
+  margin-top: 80px;
+  border-radius: 20px;
+  background-color: rgb(13, 45, 59);
+}
+
+@media (min-width: 768px) {
+  .contactos {
+    width: 35%;
+  }
+}
+@media (min-width: 1024px) {
+  .contactosContenedor {
+    display: grid;
+    grid-template-areas: "header    header" "titulo    titulo" "contactos mail";
+    grid-template-columns: 50%;
+    gap: 20px;
+  }
+}
+.contenedorServicios {
+  display: grid;
+  grid-template-areas: "header" "titulo" "cursos" "footer";
+}
+
+.cursosContenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.cursos {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 5px;
+}
+
+@media (min-width: 500px) {
+  .cursos {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .cursos {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 5px;
+  }
+}
+@media (min-width: 1024px) {
+  .cursos {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 50px;
+  }
+}
+.venta {
+  display: flex;
+  flex-direction: column;
+}
+.venta img {
+  height: auto;
+  width: auto;
+  border-radius: 20px;
+  margin: 40px;
+  transition: 1s;
+}
+.venta img:hover {
+  transform: scale(1.2);
+}
+
+@media (min-width: 500px) {
+  .venta {
+    align-items: center;
+  }
+  .venta img {
+    height: auto;
+    width: 300px;
+    border-radius: 20px;
+    margin: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .venta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.infor {
+  display: flex;
+  flex-direction: column;
+}
+.infor p {
+  text-align: center;
+  margin: 20px 70px 20px 70px;
+  font-size: 20px;
+  background-color: rgb(13, 45, 59);
+  border-radius: 20px;
+  padding: 20px;
+  color: bisque;
+}/*# sourceMappingURL=estilos.css.map */

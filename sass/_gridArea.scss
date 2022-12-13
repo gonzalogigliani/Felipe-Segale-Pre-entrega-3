@@ -1,0 +1,36 @@
+/*grids index*/
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.imgs {
+    grid-area: imgs;
+}
+
+
+/*contacto*/
+
+.contactos {
+    grid-area: contactos;
+}
+
+.mail {
+    grid-area: mail;
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.cursos{
+    grid-area: cursos;
+}
